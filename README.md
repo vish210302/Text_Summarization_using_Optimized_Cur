@@ -10,12 +10,12 @@ The first approach utilizes the Discrete Empirical Interpolation Method (DEIM), 
 
 The second approach employs a fast deterministic CUR decomposition method introduced by Yashutoshi Ida in **"Fast Deterministic CUR Matrix Decomposition with Accuracy Assurance.**" This method improves upon the coordinate descent approach by avoiding unnecessary updates. It evaluates optimality conditions to efficiently update parameters, thus speeding up the CUR decomposition process while ensuring accuracy.
 
-### Evaluation
+## Evaluation
 The performance of the implemented methods has been evaluated based on two criteria: precision,recall,F1- score and computation time. The following tables summarize the results:
 
-**TABLE I. 	EVALUATION TABLE**
+### TABLE I. 	EVALUATION TABLE
 ![image](https://github.com/user-attachments/assets/221c952c-6117-4f7a-b53c-7c41e2ae43aa)
-**TABLE II. 	TIME COMPARISON TABLE**
+### TABLE II. 	TIME COMPARISON TABLE
 ![image](https://github.com/user-attachments/assets/b8ca397d-d8df-4220-bbca-61468fe8329d)
 
 Evaluation results indicate that Precision, Recall, and F1-score remain consistent between DEIM and the Faster Deterministic Approach, indicating comparable performance while ensuring accuracy post-optimization with the latter. A comparative analysis of computational time reveals that the Faster Deterministic Approach significantly outperforms DEIM, demonstrating substantially reduced processing time.
